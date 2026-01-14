@@ -9,7 +9,7 @@ h2 {
     padding: 0.75rem;
     text-align: center;
     color: #ffffff;
-    background-color: #038fa8;
+    background-color: #047286;
     font-size: 2vw;
 }
 
@@ -32,12 +32,12 @@ h1 {
     text-decoration: none;
     text-align: center;
     flex: 1 1 auto;
-    background-color: #047286;
+    background-color: #055666 ;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .navigation a:hover {
-    background-color: #038fa8;
+    background-color: #047286;
     color: #fff;
 }
 
