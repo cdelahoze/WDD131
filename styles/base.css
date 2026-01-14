@@ -37,7 +37,7 @@ h1 {
 }
 
 .navigation a:hover {
-    background-color: #06a6c2;
+    background-color: #006375;
     color: #fff;
 }
 
@@ -153,7 +153,7 @@ footer {
     padding: 1rem;
     border-top: 1px solid #cccccc;
     color: #ffffff;
-    background-color: #06a6c2;
+    background-color: #058096;
 }
 
 footer p {
