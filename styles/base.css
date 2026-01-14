@@ -9,7 +9,7 @@ h2 {
     padding: 0.75rem;
     text-align: center;
     color: #ffffff;
-    background-color: #06a6c2;
+    background-color: #038fa8;
     font-size: 2vw;
 }
 
@@ -37,7 +37,7 @@ h1 {
 }
 
 .navigation a:hover {
-    background-color: #006375;
+    background-color: #038fa8;
     color: #fff;
 }
 
