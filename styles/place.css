@@ -1,4 +1,6 @@
 :root {
+  --theme-color: #5B2C6F;
+  /* ...otros colores... */
   /* Colores principales */
   --primary-blue: #2563eb;
   --dark-blue: #1e40af;
@@ -96,7 +98,6 @@ h2 {
   background: transparent;
   padding: 1rem;
   border-radius: 12px;
-
   box-sizing: border-box;
 }
 
