@@ -77,6 +77,7 @@ function createTempleCard(temple, isPlaceholder = false) {
 // Render all temples
 function renderTemples(templeList, usePlaceholders = false) {
   const gallery = document.getElementById("temple-gallery");
+  if (!gallery) return;
   gallery.innerHTML = ""; // Limpiamos la galería
 
   templeList.forEach((temple) => {
@@ -97,11 +98,31 @@ async function init() {
   renderTemples(temples, true);
 
   // 2. Retardo intencional de 2.5 segundos
-  await new Promise(resolve => setTimeout(resolve, 2500));
+  await new Promise(resolve => setTimeout(resolve, 100));
 
-  // 3. Cargamos las imágenes reales
-  renderTemples(temples, false);
+  // 3. Cambio gradual de src
+  const images = document.querySelectorAll("#temple-gallery img");
+
+images.forEach((img, index) => {
+    // Aplicamos clase de desvanecimiento antes del cambio
+    img.classList.add("fade-out");
+
+    // Esperamos un instante para que el navegador procese la clase
+    setTimeout(() => {
+      // Cambiamos al src real del array original
+      img.src = temples[index].src;
+      img.alt = temples[index].alt;
+
+      // Cuando la imagen real cargue, quitamos el desvanecimiento
+      img.onload = () => {
+        img.classList.remove("fade-out");
+        img.classList.add("fade-in");
+      };
+    }, 100 * index); // Efecto cascada opcional
+  });
 }
+
+
 
 // Initialize the page with all temples
 init();

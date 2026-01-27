@@ -63,12 +63,23 @@ main h1 {
     background-color: #f0f0f0; /* Color de fondo mientras carga */
 }
 
+
 #temple-gallery img {
     width: 100%;
-    /* Ajusta este valor al alto de tus imágenes reales */
-    aspect-ratio: 4 / 3; 
-    object-fit: cover; 
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
     display: block;
+    /* Transición suave de opacidad */
+    transition: opacity 0.8s ease-in-out;
+}
+
+/* Clase para el efecto de desvanecimiento */
+.fade-out {
+    opacity: 0.3;
+}
+
+.fade-in {
+    opacity: 1;
 }
 
 
