@@ -109,7 +109,6 @@ main {
   border: 2px solid #ffffff;
   border-bottom: none;
   aspect-ratio: 4 / 3;
-  object-fit: cover;
   display: block;
   /* Transición suave de opacidad */
   transition: opacity 0.3s ease-in-out;
@@ -197,26 +196,6 @@ footer p {
   #temple-gallery {
     grid-template-columns: repeat(3, 1fr);
   }
-
-  #menu-toggle {
-    display: none;
-  }
-
-  .navigation {
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    order: 2;
-  }
-
-  .navigation a {
-    background-color: #5b2c6f;
-    border-bottom: none;
-    padding: 0.75rem 1rem;
-    font-size: 1rem;
-  }
-
-  .navigation a:hover {
-    background-color: #7e5192;
-  }
+  /* Desktop only: increase columns; navigation/menu rules
+     are shared with tablet and defined in the 640px media query. */
 }
