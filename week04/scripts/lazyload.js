@@ -98,7 +98,7 @@ async function init() {
   renderTemples(temples, true);
 
   // 2. Retardo intencional de 2.5 segundos
-  await new Promise(resolve => setTimeout(resolve, 100));
+  await new Promise(resolve => setTimeout(resolve, 10000));
 
   // 3. Cambio gradual de src
   const images = document.querySelectorAll("#temple-gallery img");
